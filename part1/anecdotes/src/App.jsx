@@ -31,6 +31,7 @@ const App = () => {
   ]
 
   const [selected, setSelected] = useState(0)
+
   const [points, setPoints] = useState(() => {
     const initialPoints = {};
     anecdotes.forEach((_, index) => {
@@ -38,6 +39,7 @@ const App = () => {
     });
     return initialPoints;
   });
+
   const [highVote, setHighVote] = useState({highestIndex:'0'});
 
   const randomSelected = () => {
